@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # Allow Cross-Origin Resource Sharing
 
 # Load the best model
-model = joblib.load('best_xss_model_random_forest_v1.pkl')
+model = joblib.load('xss model with custom tokenizer.pkl')
 
 def predict_xss(sentences):
     return model.predict(sentences)[0]
